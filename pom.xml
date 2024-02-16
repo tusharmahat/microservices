@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.tushar.microservices</groupId>
+	<artifactId>microservices</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>microservices</name>
+	<description>Parent project of microservices</description>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.8</version>
+		<relativePath /> <!-- lookup grand-parent from repository -->
+	</parent>
+
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<spring-cloud.version>2022.0.5</spring-cloud.version>
+	</properties>
+
+	<modules>
+		<module>ProductService</module>
+		<module>OrderService</module>
+		<module>InventoryService</module>
+		<module>DiscoveryServer</module>
+		<module>APIGateway</module>
+		<module>NotificationService</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.testcontainers</groupId>
+				<artifactId>testcontainers-bom</artifactId>
+				<version>1.19.4</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
+					</image>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+<!--			 <plugin>-->
+<!--                <groupId>com.google.cloud.tools</groupId>-->
+<!--                <artifactId>jib-maven-plugin</artifactId>-->
+<!--                <version>3.4.0</version>-->
+<!--                <configuration>-->
+<!--                    <from>-->
+<!--                        <image>eclipse-temurin:17.0.4.1_1-jre</image>-->
+<!--                    </from>-->
+<!--                    <to>-->
+<!--                        <image>registry.hub.docker.com/tusharmahat/microservices/${project.artifactId}</image>-->
+<!--                    </to>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>dockerBuild</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+		</plugins>
+	</build>
+</project>
