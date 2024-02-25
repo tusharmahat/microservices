@@ -1,0 +1,8 @@
+com/tushar/microservices/product/dto/ProductResponseDTO.class
+com/tushar/microservices/product/service/impl/ProductServiceImpl.class
+com/tushar/microservices/product/repo/ProductRepo.class
+com/tushar/microservices/product/service/ProductService.class
+com/tushar/microservices/product/dto/ProductRequestDTO.class
+com/tushar/microservices/product/ProductServiceApplication.class
+com/tushar/microservices/product/rest/RestController.class
+com/tushar/microservices/product/entity/Product.class

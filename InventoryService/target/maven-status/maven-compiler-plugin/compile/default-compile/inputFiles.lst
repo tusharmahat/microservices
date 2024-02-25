@@ -1,0 +1,7 @@
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/entity/Inventory.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/dto/InventoryResponse.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/repo/InventoryRepo.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/rest/InventoryController.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/InventoryServiceApplication.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/service/InventoryService.java
+/Users/tusharmahat/Desktop/BJD40/MicroServices/Microservices/InventoryService/src/main/java/com/tushar/microservices/inventory/service/impl/InventoryServiceImpl.java

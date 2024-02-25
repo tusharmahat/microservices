@@ -1,0 +1,8 @@
+com/tushar/microservices/inventory/service/InventoryService.class
+com/tushar/microservices/inventory/entity/Inventory.class
+com/tushar/microservices/inventory/rest/InventoryController.class
+com/tushar/microservices/inventory/dto/InventoryResponse$InventoryResponseBuilder.class
+com/tushar/microservices/inventory/InventoryServiceApplication.class
+com/tushar/microservices/inventory/dto/InventoryResponse.class
+com/tushar/microservices/inventory/service/impl/InventoryServiceImpl.class
+com/tushar/microservices/inventory/repo/InventoryRepo.class
