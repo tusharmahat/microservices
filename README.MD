@@ -7,13 +7,13 @@ This repository contains a microservices application built using Docker Compose.
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tusharmahat/microservices.git
    ```
 
 2. Navigate to the root directory of the cloned repository:
 
    ```bash
-   cd <repository-directory>
+   cd https://github.com/tusharmahat/microservices.git
    ```
 
 3. Ensure Docker is installed on your machine.
@@ -41,7 +41,7 @@ To run the application without Docker:
 2. Navigate to the root directory of the cloned repository:
 
    ```bash
-   cd <repository-directory>
+   cd https://github.com/tusharmahat/microservices.git
    ```
 
 3. Build the applications in each service's directory:
