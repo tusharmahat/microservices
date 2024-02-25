@@ -13,7 +13,7 @@ This repository contains a microservices application built using Docker Compose.
 2. Navigate to the root directory of the cloned repository:
 
    ```bash
-   cd https://github.com/tusharmahat/microservices.git
+   cd microservices
    ```
 
 3. Ensure Docker is installed on your machine.
@@ -41,7 +41,7 @@ To run the application without Docker:
 2. Navigate to the root directory of the cloned repository:
 
    ```bash
-   cd https://github.com/tusharmahat/microservices.git
+   cd microservices
    ```
 
 3. Build the applications in each service's directory:
