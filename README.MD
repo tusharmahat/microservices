@@ -68,5 +68,3 @@ To run the application without Docker:
 
 - Ensure that you have sufficient system resources (CPU, memory, disk space) available to run all the services effectively.
 
-For more detailed setup instructions and configurations, please refer to the documentation of each individual service and the respective Dockerfiles if provided.
-
